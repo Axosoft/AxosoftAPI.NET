@@ -1,9 +1,8 @@
-﻿using AxosoftAPI.NET.Helpers;
+﻿using System.Collections.Generic;
+using AxosoftAPI.NET.Core;
+using AxosoftAPI.NET.Helpers;
+using AxosoftAPI.NET.Interfaces;
 using AxosoftAPI.NET.Models;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Linq;
 
 namespace AxosoftAPI.NET
 {

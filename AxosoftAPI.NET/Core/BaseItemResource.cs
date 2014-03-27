@@ -1,11 +1,12 @@
-﻿using AxosoftAPI.NET.Helpers;
-using AxosoftAPI.NET.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using AxosoftAPI.NET.Core.Interfaces;
+using AxosoftAPI.NET.Helpers;
+using AxosoftAPI.NET.Interfaces;
+using AxosoftAPI.NET.Models;
 
-namespace AxosoftAPI.NET
+namespace AxosoftAPI.NET.Core
 {
 	public class BaseItemResource<T> : BaseResponseResource<T>, IItemResource<T> where T : Item, new()
 	{

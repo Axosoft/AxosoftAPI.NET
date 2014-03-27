@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using AxosoftAPI.NET.Models;
 
-namespace AxosoftAPI.NET
+namespace AxosoftAPI.NET.Core.Interfaces
 {
 	public interface ICreateResource<T>
 	{

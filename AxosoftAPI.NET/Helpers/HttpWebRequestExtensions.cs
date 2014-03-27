@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
-using AxosoftAPI.NET.Models;
-using System.IO;
+﻿using System.IO;
 using System.Net;
 using System.Text;
+using AxosoftAPI.NET.Models;
+using Newtonsoft.Json;
 
 namespace AxosoftAPI.NET.Helpers
 {

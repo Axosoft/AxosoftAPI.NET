@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace AxosoftAPI.NET.Helpers
 {
 	public static class ObjectExtensions

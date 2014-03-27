@@ -1,10 +1,10 @@
-﻿using AxosoftAPI.NET.Helpers;
-using AxosoftAPI.NET.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Net;
+using AxosoftAPI.NET.Core.Interfaces;
+using AxosoftAPI.NET.Interfaces;
+using AxosoftAPI.NET.Models;
 
-namespace AxosoftAPI.NET
+namespace AxosoftAPI.NET.Core
 {
 	public class BaseResponseResource<T> : IResource<T> where T : BaseModel, new()
 	{

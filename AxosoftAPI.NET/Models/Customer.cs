@@ -1,19 +1,15 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace AxosoftAPI.NET.Models
 {
 	public class Customer : BaseModel
 	{
 		[JsonProperty("company_name")]
-		public string FirstName { get; set; }
+		public string CompanyName { get; set; }
 
 		[JsonProperty("company_url")]
-		public string LastName { get; set; }
+		public string CompanyUrl { get; set; }
 
 		[JsonProperty("custom_fields")]
 		public IDictionary<string, object> CustomFields { get; set; }

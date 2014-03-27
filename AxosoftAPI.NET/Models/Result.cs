@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AxosoftAPI.NET.Models
 {
@@ -21,6 +17,9 @@ namespace AxosoftAPI.NET.Models
 		/// </summary>
 		public bool IsSuccessful { get; set; }
 
+		/// <summary>
+		/// Error message if an error occurred.
+		/// </summary>
 		public string ErrorMessage { get; set; }
 	}
 }

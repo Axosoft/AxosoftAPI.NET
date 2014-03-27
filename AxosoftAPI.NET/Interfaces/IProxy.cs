@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AxosoftAPI.NET
+namespace AxosoftAPI.NET.Interfaces
 {
 	public interface IProxy
 	{

@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using AxosoftAPI.NET.Helpers;
+﻿using System;
 
 namespace AxosoftAPI.NET.Models
 {

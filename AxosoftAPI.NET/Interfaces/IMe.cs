@@ -1,13 +1,9 @@
 ﻿using AxosoftAPI.NET.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace AxosoftAPI.NET
+namespace AxosoftAPI.NET.Interfaces
 {
 	public interface IMe
 	{
-        Result<User> Get();
+		Result<User> Get();
 	}
 }

@@ -1,10 +1,11 @@
-﻿using AxosoftAPI.NET.Helpers;
-using AxosoftAPI.NET.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using AxosoftAPI.NET.Helpers;
+using AxosoftAPI.NET.Interfaces;
+using AxosoftAPI.NET.Models;
 
-namespace AxosoftAPI.NET
+namespace AxosoftAPI.NET.Core
 {
 	public class BaseRequest
 	{
@@ -65,28 +66,23 @@ namespace AxosoftAPI.NET
 
 		protected virtual HttpWebRequest BuildRequest(string resource, IDictionary<string, object> parameters = null)
 		{
-			var inParameters = new Dictionary<string, object>();
-
-			// Create new instance of parameters (if necessary)
-			if (parameters != null)
-			{
-				inParameters.Append(parameters);
-			}
-
-			// If Access token available then add to parameters list
-			if (!string.IsNullOrWhiteSpace(client.AccessToken))
-			{
-				inParameters.Add("access_token", client.AccessToken);
-			}
-
 			// Build URI
 			var uri = new UriBuilder(GetVersionedResourceUri(resource));
 
 			// Add all parameters to URI
-			uri.AddParameters(inParameters);
+			uri.AddParameters(parameters);
 
-			// Create and return new web request
-			return WebRequest.CreateHttp(uri.ToString());
+			// Create new http web request
+			var request = WebRequest.CreateHttp(uri.ToString());
+
+			// Add OAuth header (X-Authorization)
+			if (!string.IsNullOrWhiteSpace(client.AccessToken))
+			{
+				request.Headers.Add("X-Authorization", string.Format(@"OAuth {0}", client.AccessToken));
+			}
+
+			// Return http request 
+			return request;
 		}
 	}
 }
