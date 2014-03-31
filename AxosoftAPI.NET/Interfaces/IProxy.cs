@@ -13,5 +13,7 @@ namespace AxosoftAPI.NET.Interfaces
 		string ClientSecret { get; set; }
 
 		string AccessToken { get; set; }
+
+		bool HasAccessToken { get; }
 	}
 }

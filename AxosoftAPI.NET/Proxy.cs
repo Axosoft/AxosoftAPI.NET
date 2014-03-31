@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using AxosoftAPI.NET.Core;
 using AxosoftAPI.NET.Helpers;
 using AxosoftAPI.NET.Interfaces;
@@ -43,6 +44,14 @@ namespace AxosoftAPI.NET
 		public string ClientSecret { get; set; }
 
 		public string AccessToken { get; set; }
+
+		public bool HasAccessToken
+		{
+			get
+			{
+				return string.IsNullOrWhiteSpace(AccessToken);
+			}
+		}
 
 		#endregion
 
@@ -100,7 +109,7 @@ namespace AxosoftAPI.NET
 			// Set default api version
 			Version = VersionEnum.Version3;
 
-			// Initiate all OnTime API proxy properties
+			// Initiate all Axosoft API proxy properties
 			Attachments = new Attachments(this);
 			Contacts = new Contacts(this);
 			Customers = new Customers(this);
@@ -185,6 +194,11 @@ namespace AxosoftAPI.NET
 		#endregion
 
 		#region Generic API calls
+
+		public HttpWebRequest BuildRequest(string resource, IDictionary<string, object> parameters = null)
+		{
+			return baseRequest.BuildRequest(resource, parameters);
+		}
 
 		public T Get<T>(string resource, IDictionary<string, object> parameters = null)
 		{

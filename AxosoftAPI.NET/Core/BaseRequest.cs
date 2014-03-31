@@ -64,7 +64,7 @@ namespace AxosoftAPI.NET.Core
 			return request.Delete<object, ErrorResponse>();
 		}
 
-		protected virtual HttpWebRequest BuildRequest(string resource, IDictionary<string, object> parameters = null)
+		public virtual HttpWebRequest BuildRequest(string resource, IDictionary<string, object> parameters = null)
 		{
 			// Build URI
 			var uri = new UriBuilder(GetVersionedResourceUri(resource));
