@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using AxosoftAPI.NET.Helpers;
 using Newtonsoft.Json;
 
 namespace AxosoftAPI.NET.Models
 {
+	[JsonConverter(typeof(CustomerConverter))]
 	public class Customer : BaseModel
 	{
 		[JsonProperty("company_name")]

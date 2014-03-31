@@ -66,11 +66,12 @@
     <Compile Include="Features.cs" />
     <Compile Include="Filters.cs" />
     <Compile Include="Helpers\BaseModelComparer.cs" />
+    <Compile Include="Helpers\CustomerConverter.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Helpers\HttpWebRequestExtensions.cs" />
     <Compile Include="Helpers\IDictionaryExtensions.cs" />
     <Compile Include="Helpers\ObjectExtensions.cs" />
-    <Compile Include="Helpers\OnTimeException.cs" />
+    <Compile Include="Helpers\AxosoftAPIException.cs" />
     <Compile Include="Helpers\SteamExtensions.cs" />
     <Compile Include="Helpers\UriBuilderExtensions.cs" />
     <Compile Include="Incidents.cs" />

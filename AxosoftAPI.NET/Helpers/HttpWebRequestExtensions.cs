@@ -57,7 +57,7 @@ namespace AxosoftAPI.NET.Helpers
 					}
 				}
 
-				throw new OnTimeException<ErrorResponse>(response, e);
+				throw new AxosoftAPIException<ErrorResponse>(response, e);
 			}
 		}
 

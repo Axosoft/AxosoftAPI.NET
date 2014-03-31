@@ -7,9 +7,9 @@ using AxosoftAPI.NET.Models;
 namespace AxosoftAPI.NET.Helpers
 {
 	[Serializable]
-	public class OnTimeException<T> : Exception where T : ErrorResponse
+	public class AxosoftAPIException<T> : Exception where T : ErrorResponse
 	{
-		public OnTimeException(T response, WebException innerException = null)
+		public AxosoftAPIException(T response, WebException innerException = null)
 			: base(GetMessage(response, innerException), innerException)
 		{
 			// Do nothing else
