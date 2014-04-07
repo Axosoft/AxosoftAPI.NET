@@ -12,5 +12,8 @@ namespace AxosoftAPI.NET.Models
 
 		[JsonProperty("incidents")]
 		public Resources Incidents { get; set; }
+
+		[JsonProperty("tasks")]
+		public Resources Tasks { get; set; }
 	}
 }

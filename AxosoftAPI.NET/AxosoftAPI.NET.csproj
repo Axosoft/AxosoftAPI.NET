@@ -106,6 +106,7 @@
     <Compile Include="Models\Constraint.cs" />
     <Compile Include="Models\Constraints.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContextResources.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomField.cs" />
     <Compile Include="Models\DefectsResources.cs" />
