@@ -71,6 +71,32 @@ namespace AxosoftAPI.NET.Tests
 		}
 
 		[TestMethod]
+		public void WorkLogs_Create()
+		{
+			var aWorklog = new WorkLog
+			{
+				Id = 0
+			};
+
+			// Set test Create method w/o parameters
+			request.Setup(m => m.Post<Response<WorkLog>>("work_logs", aWorklog, null)).Returns(new Response<WorkLog>
+			{
+				Data = new WorkLog
+				{
+					Id = 1234
+				}
+			});
+
+			// Test Get method
+			var result = workLogsProxy.Create(aWorklog);
+
+			// Verify test
+			Assert.IsNotNull(result);
+			Assert.IsTrue(result.IsSuccessful);
+			Assert.AreEqual(1234, result.Data.Id);
+		}
+
+		[TestMethod]
 		public void WorkLogs_Delete()
 		{
 			// Set test Create method w/o parameters

@@ -3,7 +3,7 @@ using AxosoftAPI.NET.Models;
 
 namespace AxosoftAPI.NET.Interfaces
 {
-	public interface IWorkLogs : IGetAllResource<WorkLog>, IDeleteResource<WorkLog>
+	public interface IWorkLogs : IGetAllResource<WorkLog>, ICreateResource<WorkLog>, IDeleteResource<WorkLog>
 	{
 	}
 }
