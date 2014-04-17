@@ -13,6 +13,6 @@
 		<description>$description$</description>
 		<releaseNotes>Original release.</releaseNotes>
 		<copyright>Copyright 2014</copyright>
-		<tags>Axosoft OnTime API</tags>
+		<tags>Axosoft OnTime API v3</tags>
 	</metadata>
 </package>
