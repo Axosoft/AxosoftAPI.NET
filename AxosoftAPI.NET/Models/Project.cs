@@ -24,6 +24,21 @@ namespace AxosoftAPI.NET.Models
 		[JsonProperty("parent")]
 		public Project Parent { get; set; }
 
+		[JsonProperty("escalations")]
+		public Escalation Escalations { get; set; }
+
+		[JsonProperty("custom_fields")]
+		public IDictionary<string, object> CustomFields { get; set; }
+
+		[JsonProperty("workflows")]
+		public IEnumerable<Workflow> Workflows { get; set; }
+
+		[JsonProperty("field_templates")]
+		public IEnumerable<FieldTemplate> FieldTemplates { get; set; }
+
+		[JsonProperty("customer_portal_templates")]
+		public IEnumerable<CustomerPortalTemplate> CustomerPortalTemplates { get; set; }
+
 		[JsonProperty("children")]
 		public IEnumerable<Project> Children { get; set; }
 

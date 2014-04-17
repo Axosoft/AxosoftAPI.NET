@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<title>$title$</title>
+		<authors>$author$</authors>
+		<owners>$author$</owners>
+		<licenseUrl>https://github.com/Axosoft/AxosoftAPI.NET/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/Axosoft/AxosoftAPI.NET</projectUrl>
+		<iconUrl>https://developer.ontimenow.com/images/gears_icon_vsgallery.png</iconUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>$description$</description>
+		<releaseNotes>Original release.</releaseNotes>
+		<copyright>Copyright 2014</copyright>
+		<tags>Axosoft OnTime API</tags>
+	</metadata>
+</package>

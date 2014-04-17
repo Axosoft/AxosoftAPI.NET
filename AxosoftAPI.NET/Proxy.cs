@@ -37,7 +37,7 @@ namespace AxosoftAPI.NET
 			}
 		}
 
-		public VersionEnum Version { get; set; }
+		public VersionEnum Version { get; private set; }
 
 		public string ClientId { get; set; }
 
@@ -49,7 +49,7 @@ namespace AxosoftAPI.NET
 		{
 			get
 			{
-				return string.IsNullOrWhiteSpace(AccessToken);
+				return !string.IsNullOrWhiteSpace(AccessToken);
 			}
 		}
 
@@ -106,7 +106,7 @@ namespace AxosoftAPI.NET
 			// Set base request
 			baseRequest = new BaseRequest(this);
 
-			// Set default api version
+			// API Version 3
 			Version = VersionEnum.Version3;
 
 			// Initiate all Axosoft API proxy properties

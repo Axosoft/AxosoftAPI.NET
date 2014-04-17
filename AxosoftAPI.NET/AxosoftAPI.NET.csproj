@@ -102,6 +102,7 @@
     <Compile Include="Models\AttachmentMetadata.cs" />
     <Compile Include="Models\AuthResponse.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Column.cs" />
     <Compile Include="Models\Constraint.cs" />
     <Compile Include="Models\Constraints.cs" />
@@ -113,6 +114,8 @@
     <Compile Include="Models\DurationUnit.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Models\ErrorResponse.cs" />
+    <Compile Include="Models\Escalation.cs" />
+    <Compile Include="Models\FieldTemplate.cs" />
     <Compile Include="Models\Filter.cs" />
     <Compile Include="Models\FocusResources.cs" />
     <Compile Include="Models\Item.cs" />
@@ -121,6 +124,7 @@
     <Compile Include="Models\Metadata.cs" />
     <Compile Include="Models\Notification.cs" />
     <Compile Include="Models\PicklistItem.cs" />
+    <Compile Include="Models\CustomerPortalTemplate.cs" />
     <Compile Include="Models\Priority.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\RelationType.cs" />
@@ -132,6 +136,7 @@
     <Compile Include="Models\Severity.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\SystemOptions.cs" />
+    <Compile Include="Models\Template.cs" />
     <Compile Include="Models\TimeUnit.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Workflow.cs" />

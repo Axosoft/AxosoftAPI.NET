@@ -6,7 +6,7 @@ namespace AxosoftAPI.NET.Interfaces
 	{
 		string Url { get; set; }
 
-		VersionEnum Version { get; set; }
+		VersionEnum Version { get; }
 
 		string ClientId { get; set; }
 

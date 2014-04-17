@@ -63,8 +63,20 @@ namespace AxosoftAPI.NET.Models
 		[JsonProperty("reported_by")]
 		public User ReportedBy { get; set; }
 
+		[JsonProperty("reported_by_customer_contact")]
+		public Contact ReportedByCustomerContact { get; set; }
+
 		[JsonProperty("status")]
 		public Status Status { get; set; }
+
+		[JsonProperty("severity")]
+		public Severity Severity { get; set; }
+
+		[JsonProperty("category")]
+		public Category Category { get; set; }
+
+		[JsonProperty("escalation_level")]
+		public Escalation EscalationLevel { get; set; }
 
 		[JsonProperty("actual_duration")]
 		public DurationUnit ActualDuration { get; set; }
@@ -89,5 +101,8 @@ namespace AxosoftAPI.NET.Models
 
 		[JsonProperty("build_number_of_fix")]
 		public string BuildNumberOfFix { get; set; }
+
+		[JsonProperty("workflow_step")]
+		public WorkflowStep WorkflowStep { get; set; }
 	}
 }
