@@ -8,7 +8,7 @@
 		<owners>$author$</owners>
 		<licenseUrl>https://github.com/Axosoft/AxosoftAPI.NET/blob/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/Axosoft/AxosoftAPI.NET</projectUrl>
-		<iconUrl>https://developer.ontimenow.com/images/gears_icon_vsgallery.png</iconUrl>
+		<iconUrl>http://developer.axosoft.com/images/external/icon_axosoft_90x90.png</iconUrl>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<description>$description$</description>
 		<releaseNotes>Original release.</releaseNotes>
