@@ -391,8 +391,14 @@ namespace AxosoftAPI.NET.Tests
 				Id = 0
 			};
 
+			var parameters = new Dictionary<string, object>
+			{
+				{ "file_name", anAttachment.FileName },
+				{ "description", anAttachment.Description },
+			};	
+
 			// Set test Create method w/o parameters
-			request.Setup(m => m.Post<Response<Attachment>>("incidents/666/attachments", anAttachment, null)).Returns(new Response<Attachment>
+			request.Setup(m => m.Post<Response<Attachment>>("incidents/666/attachments", anAttachment.Data, parameters)).Returns(new Response<Attachment>
 			{
 				Data = new Attachment
 				{

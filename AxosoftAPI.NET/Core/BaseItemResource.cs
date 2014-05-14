@@ -84,8 +84,15 @@ namespace AxosoftAPI.NET.Core
 
 		public Result<Attachment> AddAttachment(int id, Attachment data, IDictionary<string, object> parameters = null)
 		{
+			var attachmentParameters = new Dictionary<string, object>
+			{
+				{ "file_name", data.FileName },
+				{ "description", data.Description },
+			}
+			.Append(parameters);
+
 			return Request<Attachment>(() =>
-				request.Post<Response<Attachment>>(string.Format("{0}/{1}/attachments", resource, id), data, parameters));
+				request.Post<Response<Attachment>>(string.Format("{0}/{1}/attachments", resource, id), data.Data, attachmentParameters));
 		}
 
 		public Result<Notification> AddNotification(int id, Notification data, IDictionary<string, object> parameters = null)
