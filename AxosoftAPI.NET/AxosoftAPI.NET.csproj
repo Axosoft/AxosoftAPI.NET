@@ -66,6 +66,8 @@
     <Compile Include="Features.cs" />
     <Compile Include="Filters.cs" />
     <Compile Include="Helpers\BaseModelComparer.cs" />
+    <Compile Include="Helpers\StatusConverter.cs" />
+    <Compile Include="Helpers\ReleaseTypeConverter.cs" />
     <Compile Include="Helpers\CustomerConverter.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Helpers\HttpWebRequestExtensions.cs" />
@@ -130,6 +132,7 @@
     <Compile Include="Models\RelationType.cs" />
     <Compile Include="Models\Release.cs" />
     <Compile Include="Models\ReleaseAccess.cs" />
+    <Compile Include="Models\ReleaseType.cs" />
     <Compile Include="Models\Response.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Models\SecurityRole.cs" />

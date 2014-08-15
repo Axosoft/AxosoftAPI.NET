@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AxosoftAPI.NET.Helpers;
 using Newtonsoft.Json;
 
 namespace AxosoftAPI.NET.Models
@@ -28,10 +29,12 @@ namespace AxosoftAPI.NET.Models
 		public Release Parent { get; set; }
 
 		[JsonProperty("release_type")]
-		public int ReleaseType { get; set; }
+		[JsonConverter(typeof(ReleaseTypeConverter))]
+		public ReleaseType ReleaseType { get; set; }
 
 		[JsonProperty("status")]
-		public int Status { get; set; }
+		[JsonConverter(typeof(StatusConverter))]
+		public Status Status { get; set; }
 
 		[JsonProperty("associated_projects")]
 		public IEnumerable<Project> AssociatedProjects { get; set; }
