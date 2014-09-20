@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attachments.cs" />
+    <Compile Include="Teams.cs" />
     <Compile Include="Core\BaseItemResource.cs" />
     <Compile Include="Core\BasePicklistResource.cs" />
     <Compile Include="Core\BaseRequest.cs" />
@@ -94,12 +95,14 @@
     <Compile Include="Interfaces\IReleases.cs" />
     <Compile Include="Interfaces\ISecurityRoles.cs" />
     <Compile Include="Interfaces\ITasks.cs" />
+    <Compile Include="Interfaces\ITeams.cs" />
     <Compile Include="Interfaces\IUsers.cs" />
     <Compile Include="Interfaces\IWorkflows.cs" />
     <Compile Include="Interfaces\IWorkflowSteps.cs" />
     <Compile Include="Interfaces\IWorklogs.cs" />
     <Compile Include="ItemRelations.cs" />
     <Compile Include="Me.cs" />
+    <Compile Include="Models\Assignee.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\AttachmentMetadata.cs" />
     <Compile Include="Models\AuthResponse.cs" />
@@ -139,6 +142,7 @@
     <Compile Include="Models\Severity.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\SystemOptions.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Models\Template.cs" />
     <Compile Include="Models\TimeUnit.cs" />
     <Compile Include="Models\User.cs" />

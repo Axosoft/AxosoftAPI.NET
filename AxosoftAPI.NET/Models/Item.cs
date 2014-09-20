@@ -49,7 +49,7 @@ namespace AxosoftAPI.NET.Models
 		public DateTime? StartDate { get; set; }
 
 		[JsonProperty("assigned_to")]
-		public User AssignedTo { get; set; }
+		public Assignee AssignedTo { get; set; }
 
 		[JsonProperty("priority")]
 		public Priority Priority { get; set; }

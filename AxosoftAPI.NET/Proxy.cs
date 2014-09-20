@@ -89,6 +89,8 @@ namespace AxosoftAPI.NET
 
 		public ISecurityRoles SecurityRoles { get; set; }
 
+		public ITeams Teams { get; set; }
+
 		public IUsers Users { get; set; }
 
 		public IWorkLogs WorkLogs { get; set; }
@@ -106,8 +108,8 @@ namespace AxosoftAPI.NET
 			// Set base request
 			baseRequest = new BaseRequest(this);
 
-			// API Version 3
-			Version = VersionEnum.Version3;
+			// API Version 4
+			Version = VersionEnum.Version4;
 
 			// Initiate all Axosoft API proxy properties
 			Attachments = new Attachments(this);
@@ -126,6 +128,7 @@ namespace AxosoftAPI.NET
 			Projects = new Projects(this);
 			Releases = new Releases(this);
 			SecurityRoles = new SecurityRoles(this);
+			Teams = new Teams(this);
 			Users = new Users(this);
 			WorkLogs = new WorkLogs(this);
 			WorkflowSteps = new WorkflowSteps(this);

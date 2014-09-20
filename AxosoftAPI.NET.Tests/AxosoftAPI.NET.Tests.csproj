@@ -66,6 +66,7 @@
     <Compile Include="ContactsTest.cs" />
     <Compile Include="Core\BaseRequestTest.cs" />
     <Compile Include="Helpers\BaseModelComparerTest.cs" />
+    <Compile Include="TeamsTest.cs" />
     <Compile Include="WorkflowStepsTest.cs" />
     <Compile Include="WorkflowsTest.cs" />
     <Compile Include="WorkLogsTest.cs" />

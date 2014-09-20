@@ -6,5 +6,8 @@ namespace AxosoftAPI.NET
 	{
 		[Description("v3")]
 		Version3,
+
+		[Description("v4")]
+		Version4,
 	}
 }

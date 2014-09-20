@@ -22,7 +22,7 @@ namespace AxosoftAPI.NET.Tests.Core
 			client.SetupGet(x => x.Url).Returns("test.test.com");
 			client.SetupGet(x => x.ClientId).Returns("123456");
 			client.SetupGet(x => x.ClientSecret).Returns("456789");
-			client.SetupGet(x => x.Version).Returns(VersionEnum.Version3);
+			client.SetupGet(x => x.Version).Returns(VersionEnum.Version4);
 		}
 
 		[TestMethod]
@@ -46,7 +46,7 @@ namespace AxosoftAPI.NET.Tests.Core
 			var result = request.GetVersionedUri();
 
 			Assert.IsNotNull(result);
-			Assert.AreEqual("test.test.com/api/v3", result);
+			Assert.AreEqual("test.test.com/api/v4", result);
 		}
 
 		[TestMethod]
@@ -57,7 +57,7 @@ namespace AxosoftAPI.NET.Tests.Core
 			var result = request.GetVersionedResourceUri("test");
 
 			Assert.IsNotNull(result);
-			Assert.AreEqual("test.test.com/api/v3/test", result);
+			Assert.AreEqual("test.test.com/api/v4/test", result);
 		}
 	}
 }
