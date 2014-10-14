@@ -14,6 +14,12 @@ namespace AxosoftAPI.NET.Models
 		[JsonProperty("created_by")]
 		public User CreatedBy { get; set; }
 
+		[JsonProperty("created_by_id")]
+		public int CreatedById { get; set; }
+
+		[JsonProperty("created_by_user_type")]
+		public int CreatedByUserType { get; set; }
+
 		[JsonProperty("last_updated_date_time")]
 		public DateTime? LastUpdatedDateTime { get; set; }
 

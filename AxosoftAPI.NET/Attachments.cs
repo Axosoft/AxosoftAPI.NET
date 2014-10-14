@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using AxosoftAPI.NET.Core;
 using AxosoftAPI.NET.Interfaces;
 using AxosoftAPI.NET.Models;
@@ -11,10 +12,10 @@ namespace AxosoftAPI.NET
 
 		public Attachments(BaseRequest request) : base("attachments", request) { }
 
-		public Result<AttachmentMetadata> GetData(int id, IList<KeyValuePair<string, object>> parameters = null)
+		public Result<Stream> GetData(int id, IList<KeyValuePair<string, object>> parameters = null)
 		{
-			return Request<AttachmentMetadata>(() =>
-				request.Get<Response<AttachmentMetadata>>(string.Format("{0}/{1}/data", resource, id)));
+			return Request<Stream>(() =>
+				request.Get<Stream>(string.Format("{0}/{1}/data", resource, id)));
 		}
 	}
 }

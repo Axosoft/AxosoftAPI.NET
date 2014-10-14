@@ -39,7 +39,14 @@ namespace AxosoftAPI.NET.Helpers
 			{
 				var response = request.GetResponse();
 
-				return response.GetResponseStream().DeserializeToJson<T>();
+				if (typeof(T) == typeof(Stream))
+				{
+					return (T)(object)response.GetResponseStream();
+				}
+				else
+				{
+					return response.GetResponseStream().DeserializeToJson<T>();
+				}
 			}
 			catch (WebException e)
 			{

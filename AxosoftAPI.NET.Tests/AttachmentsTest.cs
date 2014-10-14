@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AxosoftAPI.NET.Interfaces;
 using AxosoftAPI.NET.Core;
+using System.IO;
 
 namespace AxosoftAPI.NET.Tests
 {
@@ -81,13 +82,7 @@ namespace AxosoftAPI.NET.Tests
 		public void Attachments_GetData()
 		{
 			// Set test GetData method w/o parameters
-			request.Setup(m => m.Get<Response<AttachmentMetadata>>("attachments/666/data", null)).Returns(new Response<AttachmentMetadata>
-			{
-				Data = new AttachmentMetadata
-				{
-					Id = 999
-				}
-			});
+			request.Setup(m => m.Get<Stream>("attachments/666/data", null)).Returns(new MemoryStream());
 
 			// Test Get method
 			var result = attachmentsProxy.GetData(666);
@@ -95,14 +90,14 @@ namespace AxosoftAPI.NET.Tests
 			// Verify test
 			Assert.IsNotNull(result);
 			Assert.IsTrue(result.IsSuccessful);
-			Assert.AreEqual(999, result.Data.Id);
+			Assert.IsNotNull(result.Data);
 		}
 
 		[TestMethod]
 		public void Attachments_GetData_Exception()
 		{
 			// Set test GetData method w/o parameters
-			request.Setup(m => m.Get<Response<AttachmentMetadata>>("attachments/666/data", null)).Throws(new Exception());
+			request.Setup(m => m.Get<Stream>("attachments/666/data", null)).Throws(new Exception());
 
 			// Test Get method
 			var result = attachmentsProxy.GetData(666);

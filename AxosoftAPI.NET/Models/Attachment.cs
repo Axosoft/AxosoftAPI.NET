@@ -11,6 +11,18 @@ namespace AxosoftAPI.NET.Models
 		[JsonProperty("description")]
 		public string Description { get; set; }
 
+		[JsonProperty("attach_date")]
+		public string AttachDate { get; set; }
+
+		[JsonProperty("source_id")]
+		public int SourceId { get; set; }
+
+		[JsonProperty("source_type")]
+		public int SourceType { get; set; }
+
+		[JsonProperty("data_hash")]
+		public string DataHash { get; set; }
+
 		[JsonIgnore]
 		public string Content { get; set; }
 

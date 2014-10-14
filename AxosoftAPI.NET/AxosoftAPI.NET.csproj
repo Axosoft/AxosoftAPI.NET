@@ -104,7 +104,6 @@
     <Compile Include="Me.cs" />
     <Compile Include="Models\Assignee.cs" />
     <Compile Include="Models\Attachment.cs" />
-    <Compile Include="Models\AttachmentMetadata.cs" />
     <Compile Include="Models\AuthResponse.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\Category.cs" />
