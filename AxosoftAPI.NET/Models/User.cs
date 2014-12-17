@@ -33,18 +33,12 @@ namespace AxosoftAPI.NET.Models
 		public string LoginId { get; set; }
 
 		[JsonProperty("security_roles")]
-		public int[] SecurityRoles { get; set; }
+		public IEnumerable<SecurityRole> SecurityRoles { get; set; }
 
 		[JsonProperty("is_active")]
 		public bool IsActive { get; set; }
 
 		[JsonProperty("is_locked")]
 		public bool IsLocked { get; set; }
-	}
-
-	public class UserSecurityRole : User
-	{
-		[JsonProperty("security_roles")]
-		public new IEnumerable<SecurityRole> SecurityRoles { get; set; }
 	}
 }

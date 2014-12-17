@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace AxosoftAPI.NET.Models
 {
@@ -6,6 +7,15 @@ namespace AxosoftAPI.NET.Models
 	{
 		[JsonProperty("name")]
 		public string Name { get; set; }
+
+		[JsonProperty("description")]
+		public string Description { get; set; }
+
+		[JsonProperty("is_active")]
+		public string IsActive { get; set; }
+
+		[JsonProperty("workflow_steps")]
+		public IEnumerable<WorkflowStep> WorkflowSteps { get; set; }
 
 		[JsonProperty("is_inherited")]
 		public bool? IsInherited { get; set; }

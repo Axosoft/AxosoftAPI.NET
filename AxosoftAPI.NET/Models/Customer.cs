@@ -18,5 +18,18 @@ namespace AxosoftAPI.NET.Models
 
 		[JsonProperty("contacts")]
 		public IEnumerable<Contact> Contacts { get; set; }
+
+		[JsonProperty("name")]
+		public string Name
+		{
+			get
+			{
+				return this.CompanyName;
+			}
+			set
+			{
+				this.CompanyName = value;
+			}
+		}
 	}
 }
