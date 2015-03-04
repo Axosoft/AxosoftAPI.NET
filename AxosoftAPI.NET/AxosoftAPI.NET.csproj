@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attachments.cs" />
+    <Compile Include="Models\PicklistValue.cs" />
     <Compile Include="Teams.cs" />
     <Compile Include="Core\BaseItemResource.cs" />
     <Compile Include="Core\BasePicklistResource.cs" />
