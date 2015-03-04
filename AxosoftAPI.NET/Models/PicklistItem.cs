@@ -1,16 +1,20 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace AxosoftAPI.NET.Models
 {
-	public class PicklistItem : BaseModel
-	{
-		[JsonProperty("name")]
-		public string Name { get; set; }
+    public class PicklistItem : BaseModel
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
-		[JsonProperty("color")]
-		public string Color { get; set; }
+        [JsonProperty("path")]
+        public string Path { get; set; }
 
-		[JsonProperty("order")]
-		public int Order { get; set; }
-	}
+        [JsonProperty("picklist_type")]
+        public string PicklistType { get; set; }
+
+        [JsonProperty("values")]
+        public IEnumerable<PicklistValue> Values { get; set; }
+    }
 }
