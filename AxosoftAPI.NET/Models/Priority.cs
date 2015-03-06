@@ -2,7 +2,7 @@
 
 namespace AxosoftAPI.NET.Models
 {
-	public class Priority : PicklistItem
+	public class Priority : DefaultPicklistItem
 	{
 	}
 }

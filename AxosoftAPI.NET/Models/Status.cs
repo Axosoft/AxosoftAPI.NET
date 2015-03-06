@@ -2,7 +2,7 @@
 
 namespace AxosoftAPI.NET.Models
 {
-	public class Status : PicklistItem
+	public class Status : DefaultPicklistItem
 	{
 	}
 }

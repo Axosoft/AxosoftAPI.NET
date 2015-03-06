@@ -2,7 +2,7 @@
 
 namespace AxosoftAPI.NET.Models
 {
-	public class Severity : PicklistItem
+	public class Severity : DefaultPicklistItem
 	{
 	}
 }
