@@ -1,5 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace AxosoftAPI.NET.Models
 {
@@ -28,5 +29,8 @@ namespace AxosoftAPI.NET.Models
 
 		[JsonProperty("date_time")]
 		public DateTime? DateTime { get; set; }
+
+		[JsonProperty("custom_fields")]
+		public IDictionary<string, object> CustomFields { get; set; }
 	}
 }
