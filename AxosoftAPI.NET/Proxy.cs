@@ -59,6 +59,8 @@ namespace AxosoftAPI.NET
 
 		public IAttachments Attachments { get; set; }
 
+		public IComments Comments { get; set; }
+
 		public IContacts Contacts { get; set; }
 
 		public ICustomers Customers { get; set; }
@@ -113,6 +115,7 @@ namespace AxosoftAPI.NET
 
 			// Initiate all Axosoft API proxy properties
 			Attachments = new Attachments(this);
+			Comments = new Comments(this);
 			Contacts = new Contacts(this);
 			Customers = new Customers(this);
 			Emails = new Emails(this);

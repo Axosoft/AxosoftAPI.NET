@@ -8,10 +8,12 @@ namespace AxosoftAPI.NET.Core.Interfaces
 		Result<IEnumerable<T>> Get(IList<int> filterIds, IDictionary<string, object> parameters = null);
 
 		Result<IEnumerable<Attachment>> GetAttachments(int id, IDictionary<string, object> parameters = null);
-
+		Result<IEnumerable<Comment>> GetComments(int id, IDictionary<string, object> parameters = null);
 		Result<IEnumerable<Email>> GetEmails(int id, IDictionary<string, object> parameters = null);
 
 		Result<Attachment> AddAttachment(int id, Attachment data, IDictionary<string, object> parameters = null);
+
+		Result<Comment> AddComment(int id, Comment comment, IDictionary<string, object> parameters = null);
 
 		Result<Notification> AddNotification(int id, Notification data, IDictionary<string, object> parameters = null);
 	}

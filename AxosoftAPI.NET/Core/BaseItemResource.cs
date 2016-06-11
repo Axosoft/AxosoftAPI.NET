@@ -63,6 +63,11 @@ namespace AxosoftAPI.NET.Core
 			return Request<IEnumerable<Attachment>>(() =>
 				request.Get<Response<IEnumerable<Attachment>>>(string.Format("{0}/{1}/attachments", resource, id), parameters));
 		}
+		public Result<IEnumerable<Comment>> GetComments(int id, IDictionary<string, object> parameters = null)
+		{
+			return Request<IEnumerable<Comment>>(() =>
+				request.Get<Response<IEnumerable<Comment>>>(string.Format("{0}/{1}/comments", resource, id), parameters));
+		}
 
 		public Result<IEnumerable<Email>> GetEmails(int id, IDictionary<string, object> parameters = null)
 		{
@@ -93,6 +98,23 @@ namespace AxosoftAPI.NET.Core
 
 			return Request<Attachment>(() =>
 				request.Post<Response<Attachment>>(string.Format("{0}/{1}/attachments", resource, id), data.Data, attachmentParameters));
+		}
+
+		public Result<Comment> AddComment(int id, Comment data, IDictionary<string, object> parameters = null)
+		{
+			//defaulting to 'comments'
+			if (data.DetailType == null)
+				data.DetailType = "comments";
+
+			var commentParameters = new Dictionary<string, object>
+			{
+				{ "detail_type", data.DetailType },
+				{ "comment_text", data.CommentText },
+			}
+			.Append(parameters);
+
+			return Request<Comment>(() =>
+				request.Post<Response<Comment>>(string.Format("{0}/{1}/comments", resource, id), data, commentParameters));
 		}
 
 		public Result<Notification> AddNotification(int id, Notification data, IDictionary<string, object> parameters = null)
