@@ -12,6 +12,9 @@ namespace AxosoftAPI.NET.Models
 		[JsonProperty("name")]
 		public string Name { get; set; }
 
+		[JsonProperty("customer")]
+		public Customer Customer { get; set; }
+
 		[JsonProperty("description")]
 		public string Description { get; set; }
 
