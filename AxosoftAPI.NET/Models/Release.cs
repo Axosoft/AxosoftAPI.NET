@@ -46,7 +46,7 @@ namespace AxosoftAPI.NET.Models
 		public DurationUnit Capacity { get; set; }
 
 		[JsonProperty("total_capacity_min")]
-		public double? TotalCapacity { get; set; }
+		public double? TotalCapacityMin { get; set; }
 
 		[JsonProperty("original_estimate_min")]
 		public double? OriginalEstimateMin { get; set; }
