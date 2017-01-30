@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace AxosoftAPI.NET.Models
 {
-	public class Fields : BaseModel
+	public class Fields
 	{
 		[JsonProperty("field")]
 		public string Field { get; set; }
