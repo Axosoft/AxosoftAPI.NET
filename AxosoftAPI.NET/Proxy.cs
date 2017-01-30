@@ -111,7 +111,7 @@ namespace AxosoftAPI.NET
 			baseRequest = new BaseRequest(this);
 
 			// API Version 4
-			Version = VersionEnum.Version4;
+			Version = VersionEnum.Version6;
 
 			// Initiate all Axosoft API proxy properties
 			Attachments = new Attachments(this);

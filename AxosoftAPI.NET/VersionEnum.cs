@@ -9,5 +9,11 @@ namespace AxosoftAPI.NET
 
 		[Description("v4")]
 		Version4,
-	}
+
+        [Description("v5")]
+        Version5,
+
+        [Description("v6")]
+        Version6,
+    }
 }

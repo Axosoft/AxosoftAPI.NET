@@ -11,7 +11,9 @@ namespace AxosoftAPI.NET.Core.Interfaces
 		Result<IEnumerable<Comment>> GetComments(int id, IDictionary<string, object> parameters = null);
 		Result<IEnumerable<Email>> GetEmails(int id, IDictionary<string, object> parameters = null);
 
-		Result<Attachment> AddAttachment(int id, Attachment data, IDictionary<string, object> parameters = null);
+        Result<IEnumerable<Fields>> GetViewTemplate(int id, IDictionary<string, object> parameters = null);
+
+        Result<Attachment> AddAttachment(int id, Attachment data, IDictionary<string, object> parameters = null);
 
 		Result<Comment> AddComment(int id, Comment comment, IDictionary<string, object> parameters = null);
 

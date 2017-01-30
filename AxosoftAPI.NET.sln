@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxosoftAPI.NET", "AxosoftAPI.NET\AxosoftAPI.NET.csproj", "{38E2891F-F38E-4CA4-AD6A-33AAB944EB85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxosoftAPI.NET.Tests", "AxosoftAPI.NET.Tests\AxosoftAPI.NET.Tests.csproj", "{3E03C406-B1EF-4807-9C09-4544D3A00634}"

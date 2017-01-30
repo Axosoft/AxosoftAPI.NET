@@ -107,5 +107,29 @@ namespace AxosoftAPI.NET.Models
 
 		[JsonProperty("workflow_step")]
 		public WorkflowStep WorkflowStep { get; set; }
-	}
+
+        [JsonProperty("comments")]
+        public Total Comments { get; set; }
+
+        [JsonProperty("subitems")]
+        public Total SubItems { get; set; }
+
+        [JsonProperty("notifications")]
+        public Total Notifications { get; set; }
+
+        [JsonProperty("related_items")]
+        public Total RelatedItmes { get; set; }
+
+        [JsonProperty("emails")]
+        public Total Emails { get; set; }
+
+        [JsonProperty("work_logs")]
+        public Total WorkLogs { get; set; }
+
+        [JsonProperty("attachments")]
+        public Total Attachments { get; set; }
+
+        [JsonProperty("zendesk_tickets")]
+        public Total ZendeskTickets { get; set; }
+    }
 }

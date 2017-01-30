@@ -49,7 +49,9 @@
     <Compile Include="Attachments.cs" />
     <Compile Include="Interfaces\IComments.cs" />
     <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Total.cs" />
     <Compile Include="Models\DefaultPicklistItem.cs" />
+    <Compile Include="Models\Fields.cs" />
     <Compile Include="Models\PicklistValue.cs" />
     <Compile Include="Teams.cs" />
     <Compile Include="Core\BaseItemResource.cs" />

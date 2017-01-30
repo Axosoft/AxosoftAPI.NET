@@ -75,7 +75,18 @@ namespace AxosoftAPI.NET.Core
 				request.Get<Response<IEnumerable<Email>>>(string.Format("{0}/{1}/emails", resource, id), parameters));
 		}
 
-		public override Result<T> Create(T entity, IDictionary<string, object> parameters = null)
+        public Result<IEnumerable<Fields>> GetViewTemplate(int id, IDictionary<string, object> parameters = null)
+        {
+            var result = Request<IEnumerable<Fields>>(() =>
+                request.Get<Response<IEnumerable<Fields>>>(string.Format("{0}/{1}/template/view", resource, id), parameters)).Data;
+
+            return new Result<IEnumerable<Fields>>
+            {
+                Data = result
+            };
+        }
+
+        public override Result<T> Create(T entity, IDictionary<string, object> parameters = null)
 		{
 			return Request<T>(() =>
 				request.Post<Response<T>>(resource, new ItemRequest { Item = entity }, parameters));
