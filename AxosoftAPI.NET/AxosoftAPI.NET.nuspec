@@ -2,7 +2,7 @@
 <package >
 	<metadata>
 		<id>$id$</id>
-		<version>$version$</version>
+		<version>6.0.2.0</version>
 		<title>$title$</title>
 		<authors>$author$</authors>
 		<owners>$author$</owners>
@@ -12,7 +12,7 @@
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<description>$description$</description>
 		<releaseNotes>Original release.</releaseNotes>
-		<copyright>Copyright 2014</copyright>
-		<tags>Axosoft OnTime API v4</tags>
+		<copyright>Copyright 2017</copyright>
+		<tags>Axosoft OnTime API v6</tags>
 	</metadata>
 </package>

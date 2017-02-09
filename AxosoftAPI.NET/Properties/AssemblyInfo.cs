@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AxosoftAPI.NET")]
-[assembly: AssemblyDescription(".NET wrapper for the Axosoft API v4")]
+[assembly: AssemblyDescription(".NET wrapper for the Axosoft API v6")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Axosoft")]
 [assembly: AssemblyProduct("AxosoftAPI.NET")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("4.0.6.0")]
-[assembly: AssemblyFileVersion("4.0.6.0")]
+[assembly: AssemblyVersion("6.0.2.0")]
+[assembly: AssemblyFileVersion("6.0.2.0")]
